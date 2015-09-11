@@ -8,7 +8,6 @@ abort("The Rails environment is running in production mode!") if Rails.env.produ
 require 'spec_helper'
 require 'rspec/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
-require "rspec/rails"
 require "capybara/rspec"
 require "vcr"
 
@@ -29,10 +28,14 @@ require "vcr"
 
 ENGINE_RAILS_ROOT=File.join(File.dirname(__FILE__), '../')
 Dir[File.join(ENGINE_RAILS_ROOT, "spec/support/**/*.rb")].each { |f| require f }
+Dir[File.join(ENGINE_RAILS_ROOT, "spec/factories/**/*.rb")].each { |f| require f }
+
 
 # Checks for pending migrations before tests are run.
 # If you are not using ActiveRecord, you can remove this line.
+ActiveRecord::Migrator.migrations_paths = 'spec/dummy/db/migrate'
 ActiveRecord::Migration.maintain_test_schema!
+
 
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures

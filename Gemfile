@@ -17,12 +17,21 @@ gemspec
 gem 'haml'
 gem 'haml-rails'
 
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-google'
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
+gem 'omniauth-github'
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'factory_girl_rails'
+  gem 'shoulda-matchers'
   gem 'webmock'
   gem 'vcr'
+  gem 'faker'
 end
 
 group :test do
