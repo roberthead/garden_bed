@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :identity, class: 'GardenBed::Identity' do
-    person
+    user
     provider "Twitter"
     uid "SomeLongString"
   end

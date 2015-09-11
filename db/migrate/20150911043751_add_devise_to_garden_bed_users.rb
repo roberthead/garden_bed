@@ -1,6 +1,6 @@
-class AddDeviseToGardenBedPeople < ActiveRecord::Migration
-  def self.change
-    change_table(:garden_bed_people) do |t|
+class AddDeviseToGardenBedUsers < ActiveRecord::Migration
+  def change
+    change_table(:garden_bed_users) do |t|
       ## Database authenticatable
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
@@ -34,9 +34,9 @@ class AddDeviseToGardenBedPeople < ActiveRecord::Migration
       # t.timestamps null: false
     end
 
-    add_index :garden_bed_people, :email,                unique: true
-    add_index :garden_bed_people, :reset_password_token, unique: true
-    add_index :garden_bed_people, :confirmation_token,   unique: true
-    # add_index :garden_bed_people, :unlock_token,         unique: true
+    add_index :garden_bed_users, :email,                unique: true
+    add_index :garden_bed_users, :reset_password_token, unique: true
+    add_index :garden_bed_users, :confirmation_token,   unique: true
+    # add_index :garden_bed_users, :unlock_token,         unique: true
   end
 end

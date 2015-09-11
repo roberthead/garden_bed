@@ -1,13 +1,13 @@
 require 'rails_helper'
 
 module GardenBed
-  RSpec.describe Person, type: :model do
+  RSpec.describe User, type: :model do
     it { should respond_to :name }
 
     describe "factory" do
-      let(:person) { FactoryGirl.build(:person) }
+      let(:user) { FactoryGirl.build(:user) }
 
-      specify { expect(person.name).to be_present }
+      specify { expect(user.name).to be_present }
     end
   end
 end

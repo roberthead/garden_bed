@@ -1,3 +1,3 @@
 GardenBed::Engine.routes.draw do
-  devise_for :people, class_name: "GardenBed::Person"
+  devise_for :users, class_name: "GardenBed::User"
 end
