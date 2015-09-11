@@ -7,8 +7,8 @@ require "garden_bed/version"
 Gem::Specification.new do |s|
   s.name        = "garden_bed"
   s.version     = GardenBed::VERSION
-  s.authors     = ["Rob Head"]
-  s.email       = ["pair+rob@pacerpro.com"]
+  s.authors     = ["Robert Head"]
+  s.email       = ["robert.head@gmail.com"]
   s.homepage    = "https://github.com/roberthead/garden_bed"
   s.summary     = "A Rails Engine for Software-as-a-Service projects."
   s.description = "GardenBed provides users, teams, plan, subscriptions, and all the basics you shouldn't have to re-invent to get your service up and running."
@@ -18,5 +18,20 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 4.2.4"
 
+  s.add_dependency 'devise'
+  s.add_dependency 'omniauth'
+  s.add_dependency 'omniauth-facebook'
+  # s.add_dependency 'omniauth-google'
+  # s.add_dependency 'omniauth-twitter'
+  # s.add_dependency 'omniauth-github'
+
   s.add_development_dependency "pg"
+  s.add_development_dependency 'rspec-rails'
+  s.add_development_dependency 'capybara'
+  s.add_development_dependency 'factory_girl_rails'
+  s.add_development_dependency 'shoulda-matchers'
+  s.add_development_dependency 'webmock'
+  s.add_development_dependency 'vcr'
+  s.add_development_dependency 'faker'
+  s.add_development_dependency 'simplecov'
 end
