@@ -1,0 +1,9 @@
+pairs:
+  rh: Robert Head; robert.head
+
+email:
+  prefix: pair
+  domain: gmail.com
+  no_solo_prefix: true
+
+global: true
