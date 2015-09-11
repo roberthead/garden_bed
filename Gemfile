@@ -14,3 +14,14 @@ gemspec
 # gem 'byebug', group: [:development, :test]
 
 gem "pg"
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'factory_girl_rails'
+  gem 'shoulda-matchers'
+  gem 'webmock'
+  gem 'vcr'
+  gem 'faker'
+  gem 'simplecov'
+end
