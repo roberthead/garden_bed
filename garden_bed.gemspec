@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = GardenBed::VERSION
   s.authors     = ["Rob Head"]
   s.email       = ["pair+rob@pacerpro.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of GardenBed."
-  s.description = "TODO: Description of GardenBed."
+  s.homepage    = "https://github.com/roberthead/garden_bed"
+  s.summary     = "A Rails Engine for Software-as-a-Service projects."
+  s.description = "GardenBed provides users, teams, plan, subscriptions, and all the basics you shouldn't have to re-invent to get your service up and running."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
