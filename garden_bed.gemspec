@@ -25,4 +25,13 @@ Gem::Specification.new do |s|
   # s.add_dependency 'omniauth-google'
   # s.add_dependency 'omniauth-twitter'
   # s.add_dependency 'omniauth-github'
+
+  s.add_developmet_dependency 'rspec-rails'
+  s.add_developmet_dependency 'capybara'
+  s.add_developmet_dependency 'factory_girl_rails'
+  s.add_developmet_dependency 'shoulda-matchers'
+  s.add_developmet_dependency 'webmock'
+  s.add_developmet_dependency 'vcr'
+  s.add_developmet_dependency 'faker'
+  s.add_developmet_dependency 'simplecov'
 end
