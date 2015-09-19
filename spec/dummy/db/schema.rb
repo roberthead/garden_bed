@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(version: 20150911043820) do
     t.string   "confirmation_token"
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
+    t.string   "unconfirmed_email"
   end
 
   add_index "garden_bed_users", ["confirmation_token"], name: "index_garden_bed_users_on_confirmation_token", unique: true, using: :btree
