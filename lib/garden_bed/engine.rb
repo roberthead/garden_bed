@@ -11,6 +11,11 @@ module GardenBed
       g.fixture_replacement :factory_girl, dir: 'spec/factories'
     end
 
+    # https://github.com/plataformatec/devise/wiki/How-To:-Use-devise-inside-a-mountable-engine
+    # config.to_prepare do
+    #   Devise::SessionsController.layout "layout_for_sessions_controller"
+    # end
+
     initializer :append_migrations do |app|
       unless app.root.to_s.match root.to_s
         config.paths["db/migrate"].expanded.each do |expanded_path|
