@@ -7,8 +7,8 @@ module GardenBed
       :rememberable,
       :trackable,
       :validatable,
-      :omniauthable
-      # :confirmable
+      :omniauthable,
+      :confirmable
     )
   end
 end
