@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  mount GardenBed::Engine => "/garden_bed"
+  mount GardenBed::Engine => "/"
 end
