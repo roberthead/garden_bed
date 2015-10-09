@@ -12,9 +12,9 @@ module GardenBed
     end
 
     # https://github.com/plataformatec/devise/wiki/How-To:-Use-devise-inside-a-mountable-engine
-    # config.to_prepare do
-    #   Devise::SessionsController.layout "layout_for_sessions_controller"
-    # end
+    config.to_prepare do
+      Devise::SessionsController.layout "application"
+    end
 
     initializer :append_migrations do |app|
       unless app.root.to_s.match root.to_s
