@@ -8,6 +8,7 @@ module GardenBed
       let(:user) { FactoryGirl.build(:user) }
 
       specify { expect(user.name).to be_present }
+      specify { expect(user).to be_valid }
     end
   end
 end
